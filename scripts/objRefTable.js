@@ -14,6 +14,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.TiledBg,
 		C3.Plugins.Browser,
 		C3.Plugins.advert,
+		C3.Plugins.Eponesh_GameScore,
+		C3.Plugins.iframe,
 		C3.Plugins.System.Cnds.EveryTick,
 		C3.Plugins.Sprite.Acts.SetSize,
 		C3.Plugins.Sprite.Exps.Width,
@@ -115,6 +117,9 @@ self.C3_JsPropNameTable = [
 	{TiledBackground: 0},
 	{Browser: 0},
 	{MobileAdvert: 0},
+	{GamePush: 0},
+	{iframe: 0},
+	{iframe2: 0},
 	{start: 0},
 	{move: 0},
 	{death: 0},
@@ -153,5 +158,8 @@ self.InstanceType = {
 	authorName: class extends self.ISpriteInstance {},
 	TiledBackground: class extends self.ITiledBackgroundInstance {},
 	Browser: class extends self.IInstance {},
-	MobileAdvert: class extends self.IInstance {}
+	MobileAdvert: class extends self.IInstance {},
+	GamePush: class extends C3.Plugins.Eponesh_GameScore.Instance {},
+	iframe: class extends self.IIframeInstance {},
+	iframe2: class extends self.IIframeInstance {}
 }
