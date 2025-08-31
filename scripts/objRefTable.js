@@ -29,6 +29,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.MoveTo.Acts.MoveToPosition,
 		C3.Plugins.Sprite.Exps.X,
 		C3.Plugins.Sprite.Exps.Y,
+		C3.Behaviors.MoveTo.Acts.SetSpeed,
 		C3.Plugins.System.Cnds.OnLayoutStart,
 		C3.Plugins.System.Acts.SetBoolVar,
 		C3.Plugins.Sprite.Acts.SetPosToObject,
@@ -57,8 +58,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Acts.CreateObject,
 		C3.Plugins.System.Exps.choose,
 		C3.Plugins.Sprite.Acts.Destroy,
-		C3.Plugins.System.Cnds.CompareVar,
 		C3.Plugins.System.Acts.SetVar,
+		C3.Plugins.System.Cnds.CompareVar,
 		C3.Plugins.LocalStorage.Acts.SetItem,
 		C3.Plugins.System.Acts.RestartLayout,
 		C3.Plugins.System.Cnds.Else,
@@ -122,7 +123,8 @@ self.C3_JsPropNameTable = [
 	{death: 0},
 	{volume: 0},
 	{layers_scale: 0},
-	{addMob: 0}
+	{addMob: 0},
+	{speed: 0}
 ];
 
 self.InstanceType = {
