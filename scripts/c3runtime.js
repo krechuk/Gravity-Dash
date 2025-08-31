@@ -1290,10 +1290,6 @@ self.C3_ExpressionFuncs = [
 			return () => C3.lerp(n0.ExpObject(), 133, 0.1);
 		},
 		p => {
-			const v0 = p._GetNode(0).GetVar();
-			return () => (500 + v0.GetValue());
-		},
-		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => C3.lerp(f0(), 1, 0.1);
 		},
@@ -1307,7 +1303,11 @@ self.C3_ExpressionFuncs = [
 		},
 		p => {
 			const v0 = p._GetNode(0).GetVar();
-			return () => (200 + v0.GetValue());
+			return () => (190 + (10 * v0.GetValue()));
+		},
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			return () => (490 + (10 * v0.GetValue()));
 		},
 		() => 0,
 		() => "game",
